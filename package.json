@@ -4,6 +4,8 @@
   "description": "**Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.",
   "main": "dist/index.js",
   "scripts": {
+    "build": "webpack --mode production",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,19 @@
   "bugs": {
     "url": "https://github.com/Nikiteo/ajs-platforms/issues"
   },
-  "homepage": "https://github.com/Nikiteo/ajs-platforms#readme"
+  "homepage": "https://github.com/Nikiteo/ajs-platforms#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.16.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.3.0"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  }
 }
